@@ -26,8 +26,8 @@ async function imageShortcode(src, alt, sizes) {
     loading: "lazy",
     decoding: "async",
   };
-  shell.exec('mkdir -p public/img')
-  shell.exec('cp img/* public/img')  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  shell.exec('mkdir -p docs/img')
+  shell.exec('cp img/* docs/img')  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
   return Image.generateHTML(metadata, imageAttributes);
 }
 
