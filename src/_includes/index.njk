@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+{% include "navbar.html" %}
+
+<body>
+    <div class="container-fluid">
+
+    {{ content | safe }}
+    
+    <div class="domus">
+
+    <div class="tutorials">
+        <h2>Tutorials</h2>
+        {%set slicelimit = 3 %}
+
+        {% set tuts = collections.tutorials | slicer(0,slicelimit) %}
+        {% for tutorial in tuts %}
+            <div><a href="{{ tutorial.url }}">{{ tutorial.data.title }}</a></div>
+            <p>{{ tutorial.data.slug | safe }}<br/>
+            <span class="fw-lighter">{{ tutorial.date | postDate }}</span></p>
+            {%- endfor %}
+        
+        {% if collections.tutorials.length > slicelimit %}
+        <a href="tutorials">See all</a>
+        {% endif %}
+    </div>
+
+    <div class="blog">
+        <h2>Blog</h2>
+        {% set posts = collections.blog | slicer(0,slicelimit) %}
+        {% for post in posts %}
+            <div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
+            <p>{{ post.data.slug }}<br/>
+            <span class="fw-lighter">{{ post.date | postDate }}</span></p>
+            {%- endfor %}
+        
+        {% if collections.blog.length > slicelimit %}
+        <a href="blog">See all</a>
+        {% endif %}
+    </div>
+    </div>
+
+    </div>
+
+<!-- more bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

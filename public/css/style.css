@@ -1,0 +1,26 @@
+.nav-am{
+    background-color: rgba(127, 255, 212, 0.3);
+    margin-bottom: 2rem;
+}
+
+.nav-am a{
+    color: darkgoldenrod;
+    opacity: 1.0;
+    padding: 1rem;
+}
+
+.nav-am a:hover{
+    background-color: rgba(127, 255, 212, 1);
+}
+
+.domus{
+    display: flex;
+}
+
+.tutorials, .blog{
+    flex: 1;
+}
+
+.blurb{
+    padding: 0 5em 0 5em;
+}
