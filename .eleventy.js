@@ -3,6 +3,8 @@ const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const shell = require('shelljs')
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+
 
 const markdownItOptions = {
     html: true,
@@ -59,6 +61,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode('tag', (arg) => `<div>${arg}</div>`);
 
     eleventyConfig.addShortcode('getNotebook', (arg) => `<iframe src="${arg}">`);
+
+    eleventyConfig.addPlugin(embedYouTube);
+
 
 
     return {

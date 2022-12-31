@@ -2,6 +2,7 @@
 layout: tutorials.njk
 title: The Case Against Random Data in Data Science Tutorials
 slug: Do the reader a favour, and stop using random data just because it's easy to generate.
+date: 2022-12-30 09:00:00
 ---
 
 I've never understood why so many data science tutorials use random data. If you're trying to learn something, you need to limit the unknown as much as possible. Why, then, use data that nobody can understand? It may be that the writers of these tutorials are able to quickly distinguish between `0.729`, `0.894` and `0.719`, but I, for one, cannot, and I doubt most people can either.

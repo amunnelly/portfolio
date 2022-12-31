@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Case Against Random Data in Data Science Tutorials</title>
+  <meta name="description" content="">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
+<link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<nav class="navbar navbar-expand-lg nav-am">
+  <a class="navbar-brand" href="/">AM</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="/tutorials">Tutorials</a>
+      <a class="nav-item nav-link" href="/blog">Blog</a>
+      <a class="nav-item nav-link" href="/roll">Roll of Honour</a>
+      <a class="nav-item nav-link" href="/about">About</a>
+    </div>
+  </div>
+</nav>
+
+<body>
+    
+    <div class="container-fluid">
+  
+  
+<h1>The Case Against Random Data in Data Science Tutorials</h1>
+
+<p>I've never understood why so many data science tutorials use random data. If you're trying to learn something, you need to limit the unknown as much as possible. Why, then, use data that nobody can understand? It may be that the writers of these tutorials are able to quickly distinguish between <code>0.729</code>, <code>0.894</code> and <code>0.719</code>, but I, for one, cannot, and I doubt most people can either.</p>
+<p><a href="https://pandas.pydata.org/docs/user_guide/indexing.html#basics">https://pandas.pydata.org/docs/user_guide/indexing.html#basics</a></p>
+<p><a href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subfigures.html">https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subfigures.html</a></p>
+<p>The advantage of random data for the tutorial-writer is that it's convenient. You can create a mega-data frame made in less than a second. But tutorials aren't meant to be convenient for the tutorial-writer. They're meant to be convenient for the tutorial-reader, and everything that make the tutorial harder to understand lessens the value of the tutorial.</p>
+<p>The advantage of familiar data is that, in working through the code examples in the tutorial, the use of familiar data means that the tutorial-reader will have an idea in her head of what the data looks like in the first place, and therefore what the data should look like when whatever is being shown has been completed. It makes it easier to figure out how the code works, and if something has gone wrong, where it's gone wrong.</p>
+<h2>Data Sources</h2>
+<h3>World Population</h3>
+<p>Everyone has an idea of world population by country, by continent, and by time. There are three categorial variables handed to you on a plate, and if you throw in landmass your cup runneth over.</p>
+<h3>Fibonacci</h3>
+<p>The Fibonacci Sequence graphs beautifully, and it's not that terribly hard to work out the first ten terms. You can even google them, if you haven't quite been able to let sloth go just yet.</p>
+<h3>Iris and Titanic</h3>
+<p>Dr Fisher's Iris Dataset is nearly one hundred years old, and has persisted because it's so incredibly good at illustrating the sort of things that need illustrating in tutorials.</p>
+<p>The Titanic dataset is excellent because everyone has heard about the Titanic and has an instinctive understanding of the some of the data. Passengers, for instance, are ranked by sex and class, and it does not take a genius to figure out that the survival chances of female first class and male third class are not randomly determined.</p>
+<h2>Sourcing Data</h2>
+<p>A google search for &quot;titanic dataset&quot; returned 1.18 million results this morning. &quot;Iris dataset&quot; returned 10.1 million. &quot;World Population Dataset&quot; returned over twenty million. The data is out there and, more importantly, it's understandable.</p>
+<h2>For Example</h2>
+<p>The <a href="https://matplotlib.org/stable/plot_types/basic/scatter_plot.html#sphx-glr-plot-types-basic-scatter-plot-py">Matplotlib documentation</a> gives an example of a scatter plot with random data:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt<br><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np<br><br>plt<span class="token punctuation">.</span>style<span class="token punctuation">.</span>use<span class="token punctuation">(</span><span class="token string">'_mpl-gallery'</span><span class="token punctuation">)</span><br><br><span class="token comment"># make the data</span><br>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>seed<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><br>x <span class="token operator">=</span> <span class="token number">4</span> <span class="token operator">+</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">)</span><br>y <span class="token operator">=</span> <span class="token number">4</span> <span class="token operator">+</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token comment"># size and color:</span><br>sizes <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><br>colors <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><br><br><span class="token comment"># plot</span><br>fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token punctuation">)</span><br><br>ax<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> s<span class="token operator">=</span>sizes<span class="token punctuation">,</span> c<span class="token operator">=</span>colors<span class="token punctuation">,</span> vmin<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> vmax<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span><br><br>ax<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span>xlim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span> xticks<span class="token operator">=</span>np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>       ylim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span> yticks<span class="token operator">=</span>np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><br>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p>It's my contention that this is needlessly bothersome, in that four lines of code are wasted in created something that doesn't mean anything to anybody. The end product isn't all that amazing either.</p>
+<p>Here's what that looks like using the iris dataset.</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd<br><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt<br><br>names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'sepal_length'</span><span class="token punctuation">,</span> <span class="token string">'sepal_width'</span><span class="token punctuation">,</span> <span class="token string">'petal_length'</span><span class="token punctuation">,</span><br>                <span class="token string">'petal_width'</span><span class="token punctuation">,</span> <span class="token string">'species'</span><span class="token punctuation">]</span><br>df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'iris.data'</span><span class="token punctuation">,</span> names<span class="token operator">=</span>names<span class="token punctuation">)</span><br><br>plt<span class="token punctuation">.</span>style<span class="token punctuation">.</span>use<span class="token punctuation">(</span><span class="token string">'_mpl-gallery'</span><span class="token punctuation">)</span><br><br>fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token punctuation">)</span><br><br>colors <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"Iris-setosa"</span><span class="token punctuation">:</span> <span class="token string">"crimson"</span><span class="token punctuation">,</span> <span class="token string">"Iris-versicolor"</span><span class="token punctuation">:</span> <span class="token string">"dodgerblue"</span><span class="token punctuation">,</span><br>        <span class="token string">"Iris-virginica"</span><span class="token punctuation">:</span> <span class="token string">"orange"</span><span class="token punctuation">}</span><br><br>df<span class="token punctuation">[</span><span class="token string">'color'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'species'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>colors<span class="token punctuation">)</span><br><br>ax<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'petal_length'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> df<span class="token punctuation">[</span><span class="token string">'petal_width'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> c<span class="token operator">=</span>df<span class="token punctuation">[</span><span class="token string">'color'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values<span class="token punctuation">)</span><br><br>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p><picture><source type="image/avif" srcset="/img/nefNNx32Vh-200.avif 200w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Fisher's Iris Dataset" loading="lazy" decoding="async" src="/img/nefNNx32Vh-200.jpeg" width="200" height="200"></picture></p>
+<p>Nothing is saved in terms of lines of code - this example is longer than the original - but the extra length is of value, because where the data comes from is more understandable and it's easier to relate the final plot to our notion of the original data, not least the remarkable way the setosa species is distinguished from versicolor and virginica by its petal size.</p>
+<p>Of course, this particular scatter plot documentation itself could use a little work, but that is work for another day.</p>
+
+  
+    </div>
+
+<!-- more bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
