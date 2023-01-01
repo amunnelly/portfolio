@@ -1,0 +1,39 @@
+#scarf {
+    display: flex;
+}
+
+.red {
+    background-color: #a72724;
+  flex: 3;
+}
+
+.green {
+    background-color: #6c5833;
+  flex: 10;
+    
+}
+
+.gold {
+    background-color: #d88529;
+  flex: 2;
+}
+
+.tan {
+    background-color: #bd9069;
+  flex: 4;
+}
+
+.brown {
+    background-color: #805a36;
+  flex: 3;
+}
+
+.purple {
+    background-color: #62234e;
+    flex: 1;
+}
+
+.grey {
+    background-color: #544643;
+    flex: 2;
+}
