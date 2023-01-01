@@ -25,12 +25,12 @@
     padding: 0 5em 0 5em;
 }
 
-pre.language{
+pre.language-python{
     font-size: small;
 }
 
 .yt{
-    width: 80vw;
+    width: 50vw;
 }
 
 .yt > iframe{
