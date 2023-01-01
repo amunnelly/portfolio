@@ -13,21 +13,23 @@
     background-color: rgba(127, 255, 212, 1);
 }
 
+img{
+    margin-left: 1rem;
+}
+
 .domus{
     display: flex;
 }
 
 .tutorials, .blog{
     flex: 1;
+    padding: 0 5em 0 5em;
 }
 
 .blurb{
     padding: 0 5em 0 5em;
 }
 
-pre.language-python{
-    font-size: small;
-}
 
 .yt{
     width: 50vw;

@@ -64,6 +64,9 @@ ax.set(xlim=(0, 8), xticks=np.arange(1, 8),
 plt.show()
 ```
 
+{% image "images/matplotlib_example.jpg", "Matplotlib scatter plot example", "(min-width: 30em) 50vw, 100vw" %}
+
+
 It's my contention that this is needlessly bothersome, in that four lines of code are wasted in created something that doesn't mean anything to anybody. The end product isn't all that amazing either.
 
 Here's what that looks like using the iris dataset.
