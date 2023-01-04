@@ -44,3 +44,7 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+.datestamp{
+    text-align: right;
+}

@@ -30,13 +30,17 @@
 
     <div class="tutorials">
         <h2>Tutorials</h2>
-        {%set slicelimit = 3 %}
+        {% set slicelimit = 3 %}
 
-        {% set tuts = collections.tutorials | slicer(0,slicelimit) %}
-        {% for tutorial in tuts %}
+        {% set tuts_reversed = collections.tutorials | reverse %}
+        {% set tuts = tuts_reversed | slicer(0,slicelimit) %}
+
+        {% for tutorial in tuts_reversed %}
             <div><a href="{{ tutorial.url }}">{{ tutorial.data.title }}</a></div>
-            <p>{{ tutorial.data.slug | safe }}<br/>
-            <span class="fw-lighter">{{ tutorial.date | postDate }}</span></p>
+            {{ tutorial.data.slug }}<br/>
+            <div class="datestamp">
+            <span class="fw-lighter">{{ tutorial.date | postDate }}</span>
+            </div>
             {%- endfor %}
         
         {% if collections.tutorials.length > slicelimit %}
@@ -46,11 +50,14 @@
 
     <div class="blog">
         <h2>Blog</h2>
-        {% set posts = collections.blog | slicer(0,slicelimit) %}
-        {% for post in posts %}
+        {% set posts_reversed = collections.blog | reverse %}
+        {% set posts = posts_reversed | slicer(0,slicelimit) %}
+        {% for post in posts_reversed %}
             <div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
-            <p>{{ post.data.slug }}<br/>
-            <span class="fw-lighter">{{ post.date | postDate }}</span></p>
+            {{ post.data.slug }}<br/>
+            <div class="datestamp">
+            <span class="fw-lighter">{{ post.date | postDate }}</span>
+            </div>
             {%- endfor %}
         
         {% if collections.blog.length > slicelimit %}
