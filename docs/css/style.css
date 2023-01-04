@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
 .nav-am{
-    background-color: rgba(127, 255, 212, 0.3);
+    background-color: rgba(108, 88, 51, 0.3);
+    /* background-color: rgba(127, 255, 212, 0.3); */
 }
 
 .nav-am a{
-    color: darkgoldenrod;
+    color: #a72724;
     opacity: 1.0;
     padding: 1rem;
+    font-family: 'Bitter', serif;
 }
 
 .nav-am a:hover{
-    background-color: rgba(127, 255, 212, 1);
+    background-color: rgba(108, 88, 51, 1);
+    color: #d88529;
 }
 
 img{
