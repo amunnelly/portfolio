@@ -1,5 +1,5 @@
 ---
-layout: tutorials.njk
+layout: blog.njk
 title: The Case Against Random Data in Data Science Tutorials
 slug: Do the reader a favour, and stop using random data just because it's easy to generate.
 date: 2022-12-30 09:00:00
