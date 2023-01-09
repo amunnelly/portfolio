@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 
-.nav-am{
-    background-color: rgba(108, 88, 51, 0.67);
-}
-
 .nav-am a{
     color: #a72724;
     opacity: 1.0;
@@ -14,8 +10,8 @@
 }
 
 .nav-am a:hover{
-    background-color: rgba(108, 88, 51, 1);
-    color: #d88529;
+    background-color: #a72724;
+    color: #fff;
 }
 
 img{
