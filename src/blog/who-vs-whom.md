@@ -14,25 +14,27 @@ He punched Mike - _he_ is the subject, _Mike_ is still the object, to punch is s
 
 Pat punched him - _Pat_ is the subject, _him_ is the object, and to punch is still the verb.
 
-Now. You'll notice that a different pronoun is used when the noun the pronoun replaces is the subject or object of a sentence. If the noun is the subject we say he or she. If the noun is the object of the sentence we say him or her.
+Now. You'll notice that a different pronoun is used when the noun the pronoun replaces is the subject or object of a sentence. If the noun is the <span class='subject'>subject</span> we say <span class="subject">he</span> or <span class="subject">she</span>. If the noun is the <span class="object">object</span> of the sentence we say <span class="object">him</span> or <span class="object">her</span>.
 
-And this is where who and whom come in. We use who when the answer is the subject of the sentence (he/she), and whom when the answer is the object of the sentence (him/her.)
+And this is where who and whom come in. We use <span class="subject">who</span> when the answer is the <span class="subject">subject</span> of the sentence (<span class="subject">he/she</span>), and <span class="object">whom</span> when the answer is the <span class="object">object</span> of the sentence (<span class="object">him/her</span>.)
 
-Who punched Mike? He punched Mike.
+<span class="subject">Pat</span> punched <span class="object">Mike</span>.
 
-Whom did Pat punch? Pat punched him.
+<span class="subject">Who</span> punched Mike? <span class="subject">He</span> punched Mike.
 
-Mary kicked Kate.
+<span class="object">Whom</span> did Pat punch? Pat punched <span class="object">him</span>.
 
-Who kicked Kate? She kicked Kate.
+<span class="subject">Mary</span> kicked <span class="object">Kate</span>.
 
-Whom did Kate kick? Kate kicked her.
+<span class="subject">Who</span> kicked Kate? <span class="subject">She</span> kicked Kate.
 
-Frank gave a ring to Mary.
+<span class="object">Whom</span> did Mary kick? Mary kicked <span class="object">her</span>.
 
-Who gave Mary a ring? He gave Mary a ring.
+<span class="subject">Frank</span> gave a ring to <span class="object">Mary</span>.
 
-To whom did Frank give a ring? He gave a ring to her.
+<span class="subject">Who</span> gave Mary a ring? <span class="subject">He</span> gave Mary a ring.
+
+To <span class="object">whom</span> did Frank give a ring? <span class="subject">He</span> gave a ring to <span class="object">her</span>.
 
 Easy, really.
 
@@ -40,4 +42,3 @@ Easy, really.
 | ------- | ------- |
 | He/She  | Him/Her |
 | Who     | Whom    |
-

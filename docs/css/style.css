@@ -45,3 +45,25 @@ img{
 .datestamp{
     text-align: right;
 }
+
+th{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid slategray;
+}
+
+td{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid slategray;
+}
+
+.subject{
+    color: #00B38F;
+    font-style: italic;
+}
+
+.object{
+    color: orangered;
+    font-style: italic; 
+}
