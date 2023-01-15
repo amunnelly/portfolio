@@ -67,3 +67,9 @@ td{
     color: orangered;
     font-style: italic; 
 }
+
+@media (max-width: 800px) {
+    .domus{
+        flex-direction: column;
+    }
+}
