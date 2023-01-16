@@ -43,7 +43,7 @@
         {% set tuts_reversed = collections.tutorials | reverse %}
         {% set tuts = tuts_reversed | slicer(0,slicelimit) %}
 
-        {% for tutorial in tuts_reversed %}
+        {% for tutorial in tuts %}
             <div><a href="{{ tutorial.url }}">{{ tutorial.data.title }}</a></div>
             {{ tutorial.data.slug }}<br/>
             <div class="datestamp">
