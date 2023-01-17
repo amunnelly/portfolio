@@ -45,7 +45,7 @@
 
         {% for tutorial in tuts %}
             <div><a href="{{ tutorial.url }}">{{ tutorial.data.title }}</a></div>
-            {{ tutorial.data.slug }}<br/>
+            {{ tutorial.data.slug | safe }}<br/>
             <div class="datestamp">
             <span class="fw-lighter">{{ tutorial.date | postDate }}</span>
             </div>
