@@ -27,22 +27,11 @@ Now. Let's abstract our problem out a little. Let's say you're governed by Siriu
 
 Let's abstract a little further. Instead of `dogs` and `not-dogs`, let's call the classifications `positive` (oh hurrah - a dog!) and `negative` (dang, it's not a dog), and let's call the judgement of the classifications `true` and `false`. So our nomenclature has morphed like this:
 
-```mermaid
-flowchart LR
-dog --> dog1[dog] --> positive
-cat -->ndog[not-dog] --> negative
-correct --> c1[correct] --> true
-incorrect --> i1[incorrect] --> false
-
-classDef woof fill:#f58442,stroke:#000,stroke-width:1px;
-classDef miaow fill:#000,stroke:#000,color:#fff;
-classDef cor fill:#3fe810,stroke:#2e7a18,stroke-width:1px;
-classDef inc fill:#f21b07,stroke:#80150b;
-
-class dog,dog1,positive woof;
-class cat,ndog,negative miaow;
-class correct,c1,true cor;
-class incorrect,i1,false inc;
+```
+dog       -> dog       -> positive
+cat       -> not-dog   -> negative
+correct   -> correct   -> true
+incorrect -> incorrect -> false
 ```
 
 And we can make a little table of how these things could go that looks like this:
@@ -73,4 +62,4 @@ $$Recall=\frac{true\ positives}{true\ positives\ +\ false\ negatives}$$
 
 In the example above, where everything is classified as `not-dog`, `precision` stays about the same, but `recall` falls through the floor, indicating the flaw in the methodology.
 
-It seems a subtle point, but consider an example other than `dogs` and `not-dogs`. Consider a classification not of animals, but viruses. The amount of viruses in the air is very low, existing in the same ratio as `dogs` to `not-dogs` in the world. But reader, consider what happens if you take a virus like [Ebola](https://www.cdc.gov/vhf/ebola/index.html) or [Marburg](https://www.cdc.gov/vhf/marburg/index.html), and your classifier classifies it as `negative` when it should have been classified `positive` - what then? What use your `accuracy` then, when Death mounts his pale horse to gather his harvest?
+It seems a subtle point, but consider an example other than `dogs` and `not-dogs`. Consider a classification not of animals, but viruses. The amount of viruses in the air is very low, existing in the same ratio as `dogs` to `not-dogs` in the world. But reader, consider what happens if you take a virus like [Ebola](https://www.cdc.gov/vhf/ebola/index.html) or [Marburg](https://www.cdc.gov/vhf/marburg/index.html), and your classifier classifies it as `negative` when it should have been classified `positive` - what then? What use your `accuracy` then, when Death mounts his pale horse to gather his grisly harvest?
