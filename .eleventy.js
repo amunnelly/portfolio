@@ -4,6 +4,7 @@ const markdownItAttrs = require('markdown-it-attrs');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const shell = require('shelljs')
 const embedYouTube = require("eleventy-plugin-youtube-embed");
+const mathjaxPlugin = require("eleventy-plugin-mathjax");
 
 
 const markdownItOptions = {
@@ -56,12 +57,14 @@ module.exports = function (eleventyConfig) {
     //smarten up the markdown: https://dev.to/giulia_chiola/add-html-classes-to-11ty-markdown-content-18ic
     eleventyConfig.setLibrary('md', markdownLib);
 
-    // test
     eleventyConfig.addShortcode('tag', (arg) => `<div>${arg}</div>`);
 
     eleventyConfig.addShortcode('getNotebook', (arg) => `<iframe src="${arg}">`);
 
     eleventyConfig.addPlugin(embedYouTube);
+
+    eleventyConfig.addPlugin(mathjaxPlugin);
+
 
 
 
