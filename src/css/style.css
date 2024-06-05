@@ -22,7 +22,7 @@ img{
     display: flex;
 }
 
-.tutorials, .blog{
+.tutorials, .blog, .elections{
     flex: 1;
     padding: 0 5em 0 5em;
 }

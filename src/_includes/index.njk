@@ -77,6 +77,25 @@
         <a href="blog">See all</a>
         {% endif %}
     </div>
+
+
+    <div class="elections">
+        <h2>Elections</h2>
+        {% set posts_reversed = collections.elections | reverse %}
+        {% set posts = posts_reversed | slicer(0,slicelimit) %}
+        {% for post in posts %}
+            <div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
+            {{ post.data.slug | safe }}<br/>
+            <div class="datestamp">
+            <span class="fw-lighter">{{ post.date | postDate }}</span>
+            </div>
+            {%- endfor %}
+        
+        {% if collections.elections.length > slicelimit %}
+        <a href="elections">See all</a>
+        {% endif %}
+    </div>
+
     </div>
 
     </div>
