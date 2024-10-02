@@ -63,7 +63,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(embedYouTube);
 
-    eleventyConfig.addPlugin(mathjaxPlugin);
+    // eleventyConfig.addPlugin(mathjaxPlugin);
 
 
 

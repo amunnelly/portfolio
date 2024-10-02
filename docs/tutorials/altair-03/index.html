@@ -1,4 +1,4 @@
-
+<!doctype html>
 <html lang="">
 <head>
   <meta charset="utf-8">
@@ -6,10 +6,10 @@
   <title>Pie Charts and Encodings in Python&#39;s Altair Package</title>
   <meta name="description" content="">
   <!-- og -->
-  <meta property="og:title" content="Pie Charts and Encodings in Python&#39;s Altair Package">
-  <meta property="og:image" content="">
-  <meta property="og:description" content="Theorists hate them, the people can&#39;t get enough of them - it&#39;s time to look at pie charts in &lt;code&gt;altair&lt;/code&gt;.">
-  <meta property="og:url" content="">
+  <meta property='og:title' content="Pie Charts and Encodings in Python&#39;s Altair Package"/>
+  <meta property='og:image' content=""/>
+  <meta property='og:description' content="Theorists hate them, the people can&#39;t get enough of them - it&#39;s time to look at pie charts in &lt;code&gt;altair&lt;/code&gt;."/>
+  <meta property='og:url' content=""/>
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
@@ -19,8 +19,9 @@
   
 </head>
 
+
 <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TCQ00GJHPS"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TCQ00GJHPS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -30,21 +31,21 @@
 </script>
 
     <div id="scarf">
-        <div class="red"> </div>
+        <div class="red">&nbsp;</div>
         <div class="green"> </div>
         <div class="gold"> </div>
         <div class="tan"> </div>
         <div class="brown"> </div>
         <div class="purple"> </div>
         <div class="grey"> </div>
-        <div class="red"> </div>
+        <div class="red">&nbsp;</div>
         <div class="green"> </div>
         <div class="gold"> </div>
         <div class="tan"> </div>
         <div class="brown"> </div>
         <div class="purple"> </div>
         <div class="grey"> </div>
-        <div class="red"> </div>
+        <div class="red">&nbsp;</div>
         <div class="green"> </div>
         <div class="gold"> </div>
         <div class="tan"> </div>
@@ -67,21 +68,21 @@
   </div>
 </nav>
     <div id="scarf">
-        <div class="red"> </div>
+        <div class="red">&nbsp;</div>
         <div class="green"> </div>
         <div class="gold"> </div>
         <div class="tan"> </div>
         <div class="brown"> </div>
         <div class="purple"> </div>
         <div class="grey"> </div>
-        <div class="red"> </div>
+        <div class="red">&nbsp;</div>
         <div class="green"> </div>
         <div class="gold"> </div>
         <div class="tan"> </div>
         <div class="brown"> </div>
         <div class="purple"> </div>
         <div class="grey"> </div>
-        <div class="red"> </div>
+        <div class="red">&nbsp;</div>
         <div class="green"> </div>
         <div class="gold"> </div>
         <div class="tan"> </div>
@@ -95,11 +96,11 @@
     <div class="container-fluid">
   
   
-<h1>Pie Charts and Encodings in Python's Altair Package</h1>
+<h1>Pie Charts and Encodings in Python&#39;s Altair Package</h1>
 
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8">
+<head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>05-pie-chart</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
@@ -14679,7 +14680,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Standard-Imports">Standard Imports<a class="anchor-link" href="#Standard-Imports">¶</a></h2>
+<h2 id="Standard-Imports">Standard Imports<a class="anchor-link" href="#Standard-Imports">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14688,7 +14689,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14708,7 +14709,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Altair-Version">Altair Version<a class="anchor-link" href="#Altair-Version">¶</a></h3><p>As pie charts are a relatively recent addition to Altair - the standing of pie charts is not high among in charting/plotting academia - we need to check out Altair version to make sure it's up to date. If it isn't, updating is easy - just open a terminal and run <code>pip install -U altair</code>.</p>
+<h3 id="Altair-Version">Altair Version<a class="anchor-link" href="#Altair-Version">&#182;</a></h3><p>As pie charts are a relatively recent addition to Altair - the standing of pie charts is not high among in charting/plotting academia - we need to check out Altair version to make sure it's up to date. If it isn't, updating is easy - just open a terminal and run <code>pip install -U altair</code>.</p>
 
 </div>
 </div>
@@ -14718,7 +14719,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">__version__</span>
@@ -14745,7 +14746,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>'4.2.0'</pre>
+<pre>&#39;4.2.0&#39;</pre>
 </div>
 
 </div>
@@ -14761,7 +14762,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Seattle-Weather-Data">Seattle Weather Data<a class="anchor-link" href="#Seattle-Weather-Data">¶</a></h2><p>The Seattle weather data has six fields. To these, we're going to add a sixth, <code>year</code>, as we're going to use that <code>year</code> category to slice our pie.</p>
+<h2 id="Seattle-Weather-Data">Seattle Weather Data<a class="anchor-link" href="#Seattle-Weather-Data">&#182;</a></h2><p>The Seattle weather data has six fields. To these, we're going to add a sixth, <code>year</code>, as we're going to use that <code>year</code> category to slice our pie.</p>
 <p>Note that we're converting out <code>year</code> field to <code>int</code> from <code>str</code>. That'll be important later.</p>
 
 </div>
@@ -14772,7 +14773,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">seattle_weather</span><span class="p">()</span>
@@ -14799,7 +14800,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 1461 entries, 0 to 1460
 Data columns (total 7 columns):
  #   Column         Non-Null Count  Dtype         
@@ -14828,7 +14829,7 @@ memory usage: 80.0+ KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Creating-the-Pie-Chart">Creating the Pie Chart<a class="anchor-link" href="#Creating-the-Pie-Chart">¶</a></h3><p>While the other <code>.mark_*()</code> methods we've seen so far all use <code>x</code> and <code>y</code> parameters, <code>.mark_arc()</code> doesn't. It uses:</p>
+<h3 id="Creating-the-Pie-Chart">Creating the Pie Chart<a class="anchor-link" href="#Creating-the-Pie-Chart">&#182;</a></h3><p>While the other <code>.mark_*()</code> methods we've seen so far all use <code>x</code> and <code>y</code> parameters, <code>.mark_arc()</code> doesn't. It uses:</p>
 <ul>
 <li><code>theta</code>, which is set to the numerical field that will be shown the chart, and</li>
 <li><code>color</code>, which is set to the categorical field by which we'll slice the chart.</li>
@@ -14843,7 +14844,7 @@ memory usage: 80.0+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_arc</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -14942,9 +14943,9 @@ memory usage: 80.0+ KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="A-Question-of-Encoding">A Question of Encoding<a class="anchor-link" href="#A-Question-of-Encoding">¶</a></h2><p>This pie chart isn't quite what you were expecting - or at least, it shouldn't be. Altair as recognised year as a number. It's thousand-separated the digits - "2,015" rather than "2015" - and it's used a color scale instead of discrete colors. This isn't what we want. We want it to see year as a discrete category. There are two ways to do this.</p>
-<h3 id="In-the-Data-Frame">In the Data Frame<a class="anchor-link" href="#In-the-Data-Frame">¶</a></h3><p>The first way is to change the data dtype(<code>dtype</code>) in the data frame itself - or, in this particular case, to have left the year as a string rather than converting it to an integer when we called our <code>lambda</code> function. And that's fine, and often the best way to do it.</p>
-<h3 id="Using-Altair's-Own-Encoding-Data-Types">Using <code>Altair</code>'s Own Encoding Data Types<a class="anchor-link" href="#Using-Altair's-Own-Encoding-Data-Types">¶</a></h3><p>Altair has a shorthand that covers <a href="https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types">five data types</a>, and allows users to explicitly state if they'd like a particular category treated in a particular way by suffixing a colon and one of five letters to the column name in setting the parameter = <code>x=something:O</code>, <code>y=something:N</code>, <code>z=something:Q</code>, or whather. These are the five abbreviations.</p>
+<h2 id="A-Question-of-Encoding">A Question of Encoding<a class="anchor-link" href="#A-Question-of-Encoding">&#182;</a></h2><p>This pie chart isn't quite what you were expecting - or at least, it shouldn't be. Altair as recognised year as a number. It's thousand-separated the digits - "2,015" rather than "2015" - and it's used a color scale instead of discrete colors. This isn't what we want. We want it to see year as a discrete category. There are two ways to do this.</p>
+<h3 id="In-the-Data-Frame">In the Data Frame<a class="anchor-link" href="#In-the-Data-Frame">&#182;</a></h3><p>The first way is to change the data dtype(<code>dtype</code>) in the data frame itself - or, in this particular case, to have left the year as a string rather than converting it to an integer when we called our <code>lambda</code> function. And that's fine, and often the best way to do it.</p>
+<h3 id="Using-Altair's-Own-Encoding-Data-Types">Using <code>Altair</code>'s Own Encoding Data Types<a class="anchor-link" href="#Using-Altair's-Own-Encoding-Data-Types">&#182;</a></h3><p>Altair has a shorthand that covers <a href="https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types">five data types</a>, and allows users to explicitly state if they'd like a particular category treated in a particular way by suffixing a colon and one of five letters to the column name in setting the parameter = <code>x=something:O</code>, <code>y=something:N</code>, <code>z=something:Q</code>, or whather. These are the five abbreviations.</p>
 
 </div>
 </div>
@@ -15012,7 +15013,7 @@ memory usage: 80.0+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_arc</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -15119,7 +15120,7 @@ memory usage: 80.0+ KB
 
 <div class="yt">
 <h1>The Original Video</h1>
-<div id="AvqWVCuCC_w" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/AvqWVCuCC_w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div id="AvqWVCuCC_w" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/AvqWVCuCC_w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 </div>
   
@@ -15132,3 +15133,4 @@ memory usage: 80.0+ KB
 
 </body>
 </html>
+
